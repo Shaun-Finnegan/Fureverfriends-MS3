@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/ef0705155e.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="{{url_for('static', filename='css/style.css')}}">
+    <title>FurEver Friends</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="logo">
+            <h1 class="logo-text">FurEver Friends</h1>
+        </div>
+        <nav class="navbar">
+            <ul>
+                <li><a href="{{url_for('index')}}">Home</a></li>
+                <li><a href="{{url_for('about')}}">About</a></li>
+                <li><a href="{{url_for('contact')}}">Contact</a></li>
+                <li><a href="{{url_for('animals')}}">Rehoming</a></li>
+                <li><a href="{{url_for('checklist')}}"> Meet Our Animals</a></li>
+            </ul>
+        </nav>
+        <div class="login">
+           <a href="{{url_for('login')}}"><h4 class="login-text">Login</h4></a>
+        </div>
+
+
+        <section class="main-image">
+            <div class="image-container">
+                {% block image %}
+                {% endblock %}
+            </div>
+         </section>
+        <section class="main1">
+            <div class="welcome">
+                {% block content %}
+                {% endblock %}
+                {% block form %}
+                {% endblock %}           
+            </div>
+            {% block welcomeinfo %}
+            <p class="welcome-info">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto, corporis.
+                Omnis quisquam nobis
+                inventore molestias dolores voluptatibus ullam modi libero neque cum tempore, minima eaque nihil soluta
+                facere, qui assumenda non vitae ex. Consequuntur, quo, quam aperiam suscipit quia saepe velit debitis
+                repellat magnam eos eveniet ipsa exercitationem quibusdam in voluptatibus libero possimus quisquam?
+                Minima, vero ipsa aut cumque distinctio impedit rem voluptas unde ut corporis magni, perferendis ab
+                delectus consectetur facilis tempore praesentium? Amet recusandae quod qui illo fugit?</p>
+            {% endblock %}
+        </section>
+        <section class="main2">
+            <div class="mission-heading">
+                {% block main2 %}
+                {% endblock %}
+                {% block form2 %}
+                {% endblock %}
+            </div>
+            {% block missioninfo %}
+            <p class="mission-info">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aspernatur molestias
+                consectetur quidem,
+                architecto qui labore est sint aliquid veniam blanditiis sequi velit corporis voluptatem atque natus
+                reiciendis impedit, odit molestiae? Amet molestiae officia tempore, obcaecati ducimus voluptatibus.
+                Minima excepturi eaque voluptates temporibus, sapiente mollitia vitae eum autem non, placeat, ipsa nemo
+                hic magni. Accusamus corrupti sapiente eius dolor quis ab exercitationem sint, tempora possimus numquam
+                qui accusantium, aliquam itaque non vitae enim adipisci excepturi totam vero velit voluptatem eligendi.
+                Deserunt!</p>
+            {% endblock %}
+            {% block bookinginfo %}
+            {% endblock %}
+        </section>
+        <footer class="footer">
+            <ul>
+                <li>
+                    <a href="https://gb.linkedin.com/" target="_blank"><i class="fa-brands fa-linkedin fa-lg"></i></a>
+                </li>
+                <li>
+                    <a href="https://en-gb.facebook.com/" target="_blank"><i
+                            class="fa-brands fa-square-facebook fa-lg"></i></a>
+                </li>
+                <li>
+                    <a href="https://www.instagram.com/" target="_blank"><i
+                            class="fa-brands fa-square-instagram fa-lg"></i></a>
+                </li>
+                <li>
+                    <a href="https://twitter.com/" target="_blank"><i class="fa-brands fa-square-twitter fa-lg"></i></a>
+                </li>
+            </ul>
+        </footer>
+
+    </div>
+</body>
+
+</html>
