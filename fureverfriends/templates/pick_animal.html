@@ -8,22 +8,14 @@
 
 {% block logintitle %}
 <div class="login-text-header">
-    <h1 class="login-title">Book A Meeting</h1>
+    <h1 class="login-title">Choose an Animal</h1>
 </div>
 {% endblock %}
 <form class="viewing-form" method="POST" action="{{url_for('success')}}">
-    <label for="fname" class="viewing-label">First name:</label><br>
-    <input type="text" id="fname" class="viewing-label" name="fname"><br>
-    <label for="lname" class="viewing-label">Last name:</label><br>
-    <input type="text" id="lname" class="viewing-label" name="lname"><br>
-    <label for="email" class="veiwing-label">Email:</label><br>
-    <input type="text" id="email" class="viewing-label" name="email"><br>
     <label for="animal" class="viewing-label">Animal:</label><br>
     <input type="text" id="animal" class="viewing-label" name="animal"><br>
     <label for="animal_name" class="veiwing-label">Animal Name:</label><br>
     <input type="text" id="email" class="viewing-label" name="animal_name"><br>
-
-
 
     <button type="submit" class="book-a-viewing" value="Submit">Book</button>
 </form>
@@ -33,16 +25,12 @@
 <h1 class="your-booking">Your Booking:</h1>
 <div>
     <ul>
-        {% for customer in customers %}
-        <li class="read-list">First Name:{{customer.first_name}} <a href = "{{ url_for('edit', id=customer.id)}}">Edit</a> <a href = "{{ url_for('delete', id=customer.id)}}">Delete</a></li>
-        <li class="read-list">Last Name:{{customer.last_name}}  </li>
-        <li class="read-list">Email:{{customer.email}}</li>
-        {% endfor %}
-
         {% for animal in animals %}
-        <li class="read-list">Animal:{{animal.animal}} </li>
+        <li class="read-list">Animal:{{animal.animal}}  </li>
         <li class="read-list">Animal Name:{{animal.animal_name}}</li>
         {% endfor %}
+
+  
 
     </ul>
 </div>
@@ -52,8 +40,6 @@
 {% block missioninfo %}
 {% endblock %}
 {% block main2 %}
-{% for customer in customers %}
-{% endfor %}
 {% for animal in animals %}
 {% endfor %}
 {% endblock %}
