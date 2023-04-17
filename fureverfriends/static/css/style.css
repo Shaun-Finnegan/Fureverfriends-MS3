@@ -1,0 +1,266 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 0.8fr 1.2fr 0.8fr;
+    grid-template-areas:
+        "logo navbar navbar login"
+        "main-image main-image main-image main-image"
+        "main1 main1 main2 main2"
+        "footer footer footer footer";
+
+
+}
+
+.container-checklist {
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 0.8fr 1.2fr 0.8fr;
+    grid-template-areas:
+        "logo navbar navbar login"
+        "check-image check-image check-image check-image"
+        "check-title check-title check-title check-title"
+        "footer footer footer footer";
+
+}
+
+.logo {
+    grid-area: logo;
+    background-color: blue;
+}
+
+.logo-text {
+    display: flex;
+    justify-content: center;
+    color: #fff;
+    margin: 5%;
+}
+
+.login {
+    background-color: blue;
+    grid-area: login;
+}
+
+.login-text {
+    display: flex;
+    justify-content: center;
+    color: #fff;
+    margin: 5%;
+    margin-top: 9%;
+}
+
+.login a {
+    text-decoration: none;
+}
+
+.login a:hover {
+    text-decoration: underline;
+    color: #fff;
+}
+
+.login-text-header {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5%;
+}
+
+.login-title {
+    display: flex;
+    justify-content: center;
+}
+
+.form {
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10%;
+
+}
+
+.signup-text-header {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5%;
+}
+
+.signup-title {
+    display: flex;
+    justify-content: center;
+}
+
+.login-label{
+    margin-bottom: 20px;
+}
+
+.signup-label{
+    margin-bottom: 20px;
+}
+
+.navbar {
+    background-color: blue;
+    grid-area: navbar;
+}
+
+.navbar ul li {
+    list-style-type: none;
+}
+
+.navbar ul {
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+}
+
+.navbar li {
+    text-decoration: none;
+    padding: 30px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.navbar a:hover {
+    text-decoration: underline;
+}
+
+.navbar a:active {
+    color: red;
+}
+
+.main1 {
+    background-color: green;
+    grid-area: main1;
+}
+
+.welcome {
+    display: block;
+    grid-area: welcome;
+}
+
+.welcome-info {
+    margin: 10px;
+}
+
+
+.main2 {
+    background-color: pink;
+    grid-area: main2;
+}
+
+.mission-heading {
+    display: flex;
+    justify-content: center;
+
+}
+
+.mission-info {
+    margin: 10px;
+}
+
+.main-image {
+    grid-area: main-image;
+}
+
+
+.rabbit-image {
+    width: 100%;
+    object-fit: cover;
+    overflow: hidden;
+}
+
+.guinea-image {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+}
+
+.hedgehog-image {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+}
+
+.squirell-banner {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+}
+
+.checklist-title-container {
+    grid-area: check-title;
+}
+
+.check-image-container {
+    grid-area: check-image;
+}
+
+.viewing-form{
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10%;
+}
+
+.viewing-label{
+    margin-bottom: 20px;
+}
+
+
+
+.book-a-viewing{
+    margin-top: 10%;
+    width: 25%;
+}
+
+.your-booking{
+    display: flex;
+    justify-content: center;
+    margin-top: 5%;
+    margin-bottom: 3%;
+}
+
+.read-list{
+    display: block;
+    font-size: 20px;
+    margin-left: 10%;
+    
+}
+
+
+.sign-up-button{
+    width: 20%;
+    margin-top: 10%;
+}
+
+.footer {
+    background-color: brown;
+    grid-area: footer;
+}
+
+.footer ul {
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+.footer li {
+    text-decoration: none;
+    padding: 30px;
+    list-style-type: none;
+    height: 50px;
+    width: 100px;
+    font-size: 100%;
+}
+
+.footer a {
+    text-decoration: none;
+    color: #fff;
+}
