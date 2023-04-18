@@ -55,7 +55,8 @@ def success():
         db.session.commit()
         db.session.add(animal)
         db.session.commit()
-        return render_template("success.html")
+        return redirect(url_for("checklist"))
+    return render_template("success.html")
 
 
 
