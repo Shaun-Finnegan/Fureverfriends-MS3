@@ -51,9 +51,11 @@ def success():
           
         )
 
-        db.session.add(customer, animal)
+        db.session.add(customer)
         db.session.commit()
-    return render_template("success.html")
+        db.session.add(animal)
+        db.session.commit()
+        return render_template("success.html")
 
 
 
@@ -100,4 +102,3 @@ def delete_animal(id):
     db.session.delete(animal)
     db.session.commit()
     return redirect(url_for("checklist"))
-
