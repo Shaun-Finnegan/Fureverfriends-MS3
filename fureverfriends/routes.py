@@ -75,17 +75,21 @@ def edit(id):
     return render_template("edit.html", customer=customer)
 
 
-@app.route("/edit_animal/<int:id>",  methods=["GET", "POST"])
-def edit_animal(id):
-    animal = Animal.query.get_or_404(id)
+@app.route("/edit_animal/<int:animal_id>",  methods=["GET", "POST"])
+def edit_animal(animal_id):
+    animal = Animal.query.get_or_404(animal_id)
  
     if request.method == 'POST':
         animal.animal = request.form.get('animal'),
-        customer.animal_name = request.form.get('animal_name'),
+        animal.animal_name = request.form.get('animal_name'),
         
+     
         db.session.commit()
         return redirect(url_for("checklist"))  
-    return render_template("edit.html", animal=animal)
+    return render_template("edit_animal.html", animal=animal)
+
+
+
 
 
 @app.route("/delete/<int:id>")
@@ -96,9 +100,9 @@ def delete(id):
     return redirect(url_for("checklist"))
 
 
-@app.route("/delete_animal/<int:id>")
-def delete_animal(id):
-    animal = Animal.query.get_or_404(id)
+@app.route("/delete_animal/<int:animal_id>")
+def delete_animal(animal_id):
+    animal = Animal.query.get_or_404(animal_id)
     db.session.delete(animal)
     db.session.commit()
     return redirect(url_for("checklist"))
