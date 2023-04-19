@@ -6,11 +6,11 @@
 {% endblock %}
 {% block form %}
 
-{% block logintitle %}
-<div class="login-text-header">
+
+<div>
     <h1 class="book-meeting">Book A Meeting</h1>
 </div>
-{% endblock %}
+
 <form class="viewing-form" method="POST" action="{{url_for('success')}}">
     <label for="fname" class="viewing-label">First name:</label><br>
     <input type="text" id="fname" class="viewing-label" name="fname"><br>

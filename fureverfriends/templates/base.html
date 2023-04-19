@@ -12,92 +12,74 @@
 
 <body>
 
-        <div class="container">
-            <div class="logo">
-                <h1 class="logo-text">FurEver Friends</h1>
+    <div class="container">
+        <div class="logo">
+            <h1 class="logo-text">FurEver Friends</h1>
+        </div>
+        <nav class="navbar">
+            <ul>
+                <li><a href="{{url_for('index')}}">Home</a></li>
+                <li><a href="{{url_for('about')}}">About</a></li>
+                <li><a href="{{url_for('animals')}}">Rehoming</a></li>
+                <li><a href="{{url_for('checklist')}}"> Meet Our Animals</a></li>
+            </ul>
+        </nav>
+
+
+
+
+        <section class="main-image">
+            <div class="image-container">
+                {% block image %}
+                {% endblock %}
             </div>
-            <nav class="navbar">
-                <ul>
-                    <li><a href="{{url_for('index')}}">Home</a></li>
-                    <li><a href="{{url_for('about')}}">About</a></li>
-                    <li><a href="{{url_for('animals')}}">Rehoming</a></li>
-                    <li><a href="{{url_for('checklist')}}"> Meet Our Animals</a></li>
-                </ul>
-            </nav>
-
-
-
-
-    <section class="main-image">
-        <div class="image-container">
-            {% block image %}
+        </section>
+        <section class="main1">
+            <div class="welcome">
+                {% block content %}
+                {% endblock %}
+                {% block form %}
+                {% endblock %}
+            </div>
+            {% block welcomeinfo %}
+            <p class="welcome-info">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni nemo eligendi nihil
+                vero suscipit, nostrum voluptatum voluptatibus inventore earum, dolor nam nesciunt dolore porro
+                doloribus minima quibusdam, at impedit! Dolor!</p>
             {% endblock %}
-        </div>
-    </section>
-    <section class="main1">
-        <div class="welcome">
-            {% block content %}
+        </section>
+        <section class="main2">
+            <div class="mission-heading">
+                {% block main2 %}
+                {% endblock %}
+                {% block form2 %}
+                {% endblock %}
+            </div>
+            {% block missioninfo %}
+            <p class="mission-info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere exercitationem, vero
+                fugit nostrum aliquid doloremque hic corporis numquam dolorem blanditiis quaerat soluta rerum nam
+                perspiciatis quae ex sint obcaecati quibusdam!</p>
             {% endblock %}
-            {% block form %}
+            {% block bookinginfo %}
             {% endblock %}
-        </div>
-        {% block welcomeinfo %}
-        <p class="welcome-info">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cupiditate, possimus
-            exercitationem distinctio nisi neque consequuntur cum culpa, nam expedita illo quis facere iste,
-            voluptas vitae tempore nulla ut quos impedit reprehenderit. Totam debitis eum et voluptas corporis,
-            dolorem, dolorum est, ratione eos neque omnis libero vitae veniam cumque eveniet. Officia dolore libero
-            excepturi rem amet aperiam corrupti accusamus quis aliquid dolor assumenda mollitia modi vitae optio
-            quia ex, beatae reprehenderit exercitationem iure laudantium voluptates illum? Itaque nemo magni optio
-            tempora eius perferendis est maiores laboriosam nisi similique commodi, excepturi officia molestias in
-            nostrum tempore illum eum! Doloribus in fugiat animi tenetur eius doloremque exercitationem, veritatis
-            neque facilis, ipsa enim temporibus sit soluta minus accusantium! Eaque, adipisci doloremque labore
-            fugiat officiis tempore magnam nisi! Quo, praesentium culpa! Nam inventore delectus obcaecati magni
-            numquam consectetur voluptatibus fugit accusantium odit voluptatum. Placeat exercitationem ut voluptates
-            nostrum est in voluptatem tempora cupiditate illum eos?</p>
-        {% endblock %}
-    </section>
-    <section class="main2">
-        <div class="mission-heading">
-            {% block main2 %}
-            {% endblock %}
-            {% block form2 %}
-            {% endblock %}
-        </div>
-        {% block missioninfo %}
-        <p class="mission-info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum ea quibusdam optio
-            provident quae fugiat similique, sed reiciendis quisquam vitae vero a quia. Aut labore maiores aperiam
-            voluptates numquam ad cumque tempora possimus quam. A deserunt quos explicabo, similique neque
-            aspernatur illum totam? Excepturi eveniet, esse nisi recusandae magnam alias minima sequi impedit iure
-            adipisci quod neque quas corporis rerum et repudiandae sunt nihil vitae rem doloremque laboriosam
-            maiores quos? Nemo ullam reiciendis hic temporibus blanditiis dolore nisi, tenetur, praesentium
-            repellendus illum quibusdam quo possimus ducimus consectetur laboriosam, ipsa ea sapiente dolorum fuga
-            mollitia totam impedit. Qui inventore cupiditate officiis enim cum explicabo alias adipisci assumenda.
-            Laudantium deleniti quis earum aliquam placeat quam, commodi fugit labore et, distinctio id temporibus
-            eveniet non voluptatibus, aut sed a veniam odio nisi harum similique ipsam. Accusantium tenetur rem sed
-            consequuntur voluptate dolore eum voluptatum pariatur explicabo, deserunt ducimus aperiam odio iusto
-            fuga! Vero.</p>
-        {% endblock %}
-        {% block bookinginfo %}
-        {% endblock %}
-    </section>
-    <footer class="footer">
-        <ul>
-            <li>
-                <a href="https://gb.linkedin.com/" target="_blank"><i class="fa-brands fa-linkedin fa-lg"></i></a>
-            </li>
-            <li>
-                <a href="https://en-gb.facebook.com/" target="_blank"><i
-                        class="fa-brands fa-square-facebook fa-lg"></i></a>
-            </li>
-            <li>
-                <a href="https://www.instagram.com/" target="_blank"><i
-                        class="fa-brands fa-square-instagram fa-lg"></i></a>
-            </li>
-            <li>
-                <a href="https://twitter.com/" target="_blank"><i class="fa-brands fa-square-twitter fa-lg"></i></a>
-            </li>
-        </ul>
-    </footer>
+        </section>
+        <footer class="footer">
+            <ul>
+                <li>
+                    <a href="https://gb.linkedin.com/" target="_blank"><i class="fa-brands fa-linkedin fa-lg"></i></a>
+                </li>
+                <li>
+                    <a href="https://en-gb.facebook.com/" target="_blank"><i
+                            class="fa-brands fa-square-facebook fa-lg"></i></a>
+                </li>
+                <li>
+                    <a href="https://www.instagram.com/" target="_blank"><i
+                            class="fa-brands fa-square-instagram fa-lg"></i></a>
+                </li>
+                <li>
+                    <a href="https://twitter.com/" target="_blank"><i class="fa-brands fa-square-twitter fa-lg"></i></a>
+                </li>
+            </ul>
+        </footer>
 
     </div>
 </body>

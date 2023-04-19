@@ -96,8 +96,17 @@
     margin-left: 50%;
 }
 
+.Hi{
+    
+        display: flex;
+        justify-content: center;
+   
+    
+}
+
 .welcome-info {
-    margin: 10px;
+    margin-left: 3%;
+    margin-right: 3%;
     padding: 10px;
 }
 
@@ -116,9 +125,23 @@
 .mission-heading {
     display: flex;
     justify-content: center;
-
-
 }
+
+.about{
+    
+        display: flex;
+        justify-content: center;
+    
+}
+
+
+.rehoming{
+    
+        display: flex;
+        justify-content: center;
+    
+}
+
 
 .book-meeting{
     display: flex;
@@ -126,7 +149,8 @@
 }
 
 .mission-info {
-    margin: 10px;
+    margin-left: 3%;
+    margin-right: 3%;
     padding: 10px;
 }
 
@@ -139,6 +163,7 @@
     width: 100%;
     object-fit: cover;
     overflow: hidden;
+    height: 400px;
 }
 
 .guinea-image {
@@ -273,5 +298,13 @@
         text-decoration: none;
         padding: 20px;
     }
+
+    
+.read-list{
+    display: block;
+    font-size: 15px;
+    margin-left: 25%;
+    margin-bottom: 4%;
+   }
 
 }
