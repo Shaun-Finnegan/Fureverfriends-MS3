@@ -10,7 +10,7 @@
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 0.8fr 1.2fr 0.8fr;
     grid-template-areas:
-        "logo navbar navbar login"
+        "logo navbar navbar navbar"
         "main-image main-image main-image main-image"
         "main1 main1 main2 main2"
         "footer footer footer footer";
@@ -24,7 +24,7 @@
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 0.8fr 1.2fr 0.8fr;
     grid-template-areas:
-        "logo navbar navbar login"
+        "logo navbar navbar navbar"
         "check-image check-image check-image check-image"
         "check-title check-title check-title check-title"
         "footer footer footer footer";
@@ -43,10 +43,7 @@
     margin: 5%;
 }
 
-.login {
-    background-color: blue;
-    grid-area: login;
-}
+
 
 .login-text {
     display: flex;

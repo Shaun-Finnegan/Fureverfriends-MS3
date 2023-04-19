@@ -24,11 +24,6 @@ def animals():
     return render_template("animals.html")
 
 
-@app.route("/login")
-def login():
-    return render_template("login.html")
-
-
 @app.route("/checklist", methods=["GET", "POST"])
 def checklist():
     customers = Customer.query.all()
