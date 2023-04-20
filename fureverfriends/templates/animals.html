@@ -1,10 +1,27 @@
 {% extends "base.html" %}
 {% block content %}
-    <h1 class="rehoming">Rehoming</h1>
+<h1 class="rehoming">Rehoming</h1>
+{% endblock %}
+{% block welcomeinfo %}
+<p class="rehoming-info">If you rehome one of our animals, you are adopting the pet permanently – giving them a forever
+  home.
+  To ensure that this decision benefits both you and your new companion we have a strict rehoming procedure.
+  That will allow your new Fureverfriend to gradually tansition into their new environment.
+  to find our more please take a look at our Fureverfirends looking for a Furever home below and book a visit!
+</p>
 {% endblock %}
 {% block main2 %}
-     <h1>Why We Do It</h1>
+<h1>Fostering</h1>
+{% endblock %}
+{% block missioninfo %}
+<p class="fostering-info">If you choose to foster one of our Fureverfriends, this means that you are wanting to provide
+  a temporary home for one of our lovely animals.
+  Much like rehoming there is a strict fostering procedure that we follow to ensure the decision to foster is right for
+  you and our animals.
+  If you are interested in fostering please take a look at the list of our Fureverfriends looking for a temporary home
+  below and book a visit!
+</p>
 {% endblock %}
 {% block image %}
-  <img src="{{url_for ('static', filename= 'images/dog-banner.jpg')}}" class="guinea-image">
+<img src="{{url_for ('static', filename= 'images/dog-banner.jpg')}}" class="guinea-image">
 {% endblock %}

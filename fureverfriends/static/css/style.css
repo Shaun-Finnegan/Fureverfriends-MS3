@@ -151,7 +151,7 @@ body {
     text-align: center;
     padding: 10px;
 }
-}
+
 
 
 .rehoming {
@@ -161,6 +161,15 @@ body {
 
 }
 
+.rehoming-info{
+    text-align: center;
+    padding: 10px;
+}
+
+.fostering-info{
+    text-align: center;
+    padding: 10px; 
+}
 
 .edit-booking {
     margin-top: 5%;
