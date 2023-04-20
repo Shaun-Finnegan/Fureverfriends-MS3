@@ -2,15 +2,15 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    
-   
+
+
 }
 
-html{
+html {
     overflow-x: hidden;
 }
 
-body{
+body {
     overflow-x: hidden;
 }
 
@@ -101,16 +101,16 @@ body{
     grid-area: welcome;
 }
 
-.welcome-message{
+.welcome-message {
     margin-left: 50%;
 }
 
-.Hi{
-    
-        display: flex;
-        justify-content: center;
-   
-    
+.Hi {
+
+    display: flex;
+    justify-content: center;
+
+
 }
 
 .welcome-info {
@@ -135,23 +135,30 @@ body{
     justify-content: center;
 }
 
-.about{
-    
-        display: flex;
-        justify-content: center;
-    
+.about {
+
+    display: flex;
+    justify-content: center;
+
 }
 
 
-.rehoming{
-    
-        display: flex;
-        justify-content: center;
-    
+.rehoming {
+
+    display: flex;
+    justify-content: center;
+
 }
 
 
-.book-meeting{
+.edit-booking {
+    margin-top: 5%;
+    display: flex;
+    justify-content: center;
+}
+
+
+.book-meeting {
     display: flex;
     justify-content: center;
 }
@@ -202,38 +209,38 @@ body{
     grid-area: check-image;
 }
 
-.viewing-form{
+.viewing-form {
     text-align: center;
     margin-top: 10px;
     margin-bottom: 10%;
 }
 
-.viewing-label{
+.viewing-label {
     margin-bottom: 20px;
 }
 
 
 
-.book-a-viewing{
+.book-a-viewing {
     margin-top: 10%;
     width: 25%;
 }
 
-.your-booking{
+.your-booking {
     display: flex;
     justify-content: center;
     margin-top: 5%;
     margin-bottom: 3%;
 }
 
-.read-list{
+.read-list {
     display: block;
     font-size: 20px;
     margin-left: 25%;
     margin-bottom: 2%;
-   }
+}
 
-.book-meeting{
+.book-meeting {
     margin-top: 5%;
 }
 
@@ -265,7 +272,7 @@ body{
 }
 
 
-@media only screen and (max-width: 1000px){
+@media only screen and (max-width: 1000px) {
     .container {
         display: grid;
         height: 100vh;
@@ -278,8 +285,8 @@ body{
             "main1"
             "main2"
             "footer";
-    
-    
+
+
     }
 
     .container-checklist {
@@ -294,7 +301,7 @@ body{
             "check-title"
             "check-title"
             "footer";
-    
+
     }
 
     .navbar ul {
@@ -309,12 +316,12 @@ body{
         padding: 20px;
     }
 
-    
-.read-list{
-    display: block;
-    font-size: 15px;
-    margin-left: 25%;
-    margin-bottom: 4%;
-   }
+
+    .read-list {
+        display: block;
+        font-size: 15px;
+        margin-left: 25%;
+        margin-bottom: 4%;
+    }
 
 }
