@@ -158,7 +158,14 @@ body {
 
     display: flex;
     justify-content: center;
+    margin-top: 1%;
 
+}
+
+.fostering{
+    display: flex;
+    justify-content: center;
+    margin-top: 1%;
 }
 
 .rehoming-info{
@@ -171,10 +178,132 @@ body {
     padding: 10px; 
 }
 
+.fluffy{
+    display: flex;
+    justify-content: center;
+    margin-top: 3%;
+}
+
+.bucky{
+    display: flex;
+    justify-content: center;
+    margin-top: 3%;
+
+}
+
+.bucky-image{
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 3%;
+}
+
+.bucky-breed{
+    text-align: center;
+    padding: 10px; 
+}
+
+.bucky-age{
+    text-align: center;
+    padding: 10px; 
+}
+
+.bucky-info{
+    text-align: center;
+    padding: 10px;
+}
+
+.fluffy{
+    display: flex;
+    justify-content: center;
+    margin-top: 3%;
+}
+
+.fluffy-image{
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 3%;
+}
+
+.fluffy-breed{
+    text-align: center;
+    padding: 10px; 
+}
+
+.fluffy-age{
+    text-align: center;
+    padding: 10px; 
+}
+
+.fluffy-info{
+    text-align: center;
+    padding: 10px; 
+}
+
+.doodles{
+    display: flex;
+    justify-content: center;
+    margin-top: 3%;
+}
+
+
+.doodles-image{
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 3%;
+}
+
+.doodles-age{
+    text-align: center;
+    padding: 10px; 
+}
+
+.doodles-breed{
+    text-align: center;
+    padding: 10px; 
+}
+
+.doodles-info{
+    text-align: center;
+    padding: 10px; 
+}
+
+
+.mic{
+    display: flex;
+    justify-content: center;
+    margin-top: 3%;
+}
+
+.mic-image{
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 3%;
+}
+
 .edit-booking {
     margin-top: 5%;
     display: flex;
     justify-content: center;
+}
+
+.mic-age{
+    text-align: center;
+    padding: 10px; 
+}
+
+
+.mic-breed{
+    text-align: center;
+    padding: 10px; 
+}
+
+.mic-info{
+    text-align: center;
+    padding: 10px; 
 }
 
 
