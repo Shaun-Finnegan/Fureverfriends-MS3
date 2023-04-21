@@ -350,6 +350,7 @@ body {
     height: 400px;
     object-fit: cover;
     overflow: hidden;
+    
 }
 
 .checklist-title-container {
@@ -534,5 +535,14 @@ body {
         object-fit: cover;
         overflow: hidden;
         object-position:left;
+    }
+
+    .squirell-image {
+        width: 100%;
+        height: 400px;
+        object-fit: cover;
+        overflow: hidden;
+        
+        
     }
 }
