@@ -393,6 +393,32 @@ body {
     margin-top: 5%;
 }
 
+.edit-animal-title{
+    display: flex;
+    justify-content: center;
+    margin-top: 5%;
+}
+
+.edit-button{
+    background-color: green;
+    height: 40px;
+    width:60px;
+    padding:10px;
+    margin-left: 5%;
+    border: 1px solid #000;
+}
+
+.delete-button{
+    background-color: red;
+    height: 40px;
+    width:60px;
+    padding:10px;
+    margin-left: 5%;
+    font-size: 12px;
+    text-align: left;
+    border: 1px solid #000;
+}
+
 
 .footer {
     background-color: brown;

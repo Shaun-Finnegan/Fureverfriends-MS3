@@ -35,13 +35,13 @@
 <div>
     <ul>
         {% for customer in customers %}
-        <li class="read-list">First Name:{{customer.first_name}} <a href = "{{ url_for('edit', id=customer.id)}}">Edit</a> <a href = "{{ url_for('delete', id=customer.id)}}">Delete</a></li>
+        <li class="read-list">First Name:{{customer.first_name}} <a href = "{{ url_for('edit', id=customer.id)}}"><button class="edit-button">Edit</button></a> <a href = "{{ url_for('delete', id=customer.id)}}"><button class="delete-button">Delete</button></a></li>
         <li class="read-list">Last Name:{{customer.last_name}}  </li>
         <li class="read-list">Email:{{customer.email}}</li>
         {% endfor %}
 
         {% for animal in animals %}
-        <li class="read-list">Animal: {{animal.animal}} <a href = "{{ url_for('edit_animal', animal_id=animal.id)}}">Edit</a> <a href = "{{ url_for('delete_animal', animal_id=animal.id)}}">Delete</a></li></li>
+        <li class="read-list">Animal: {{animal.animal}} <a href = "{{ url_for('edit_animal', animal_id=animal.id)}}"><button class="edit-button">Edit</button></a> <a href = "{{ url_for('delete_animal', animal_id=animal.id)}}"><button class="delete-button">Delete</button></a></li></li>
         <li class="read-list">Animal Name: {{animal.animal_name}}</li>
         {% endfor %}
 
