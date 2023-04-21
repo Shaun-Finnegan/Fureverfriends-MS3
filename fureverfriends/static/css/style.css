@@ -345,16 +345,7 @@ body {
     overflow: hidden;
 }
 
-.hedgehog-image {
-    width: 100%;
-    height: 400px;
-    object-fit: cover;
-    overflow: hidden;
-}
-
-
-
-.squirell-banner {
+.squirell-image {
     width: 100%;
     height: 400px;
     object-fit: cover;
@@ -529,6 +520,14 @@ body {
         margin-bottom: 4%;
     }
 
+    .rabbit-image {
+        width: 100%;
+        object-fit: cover;
+        overflow: hidden;
+        height: 400px;
+        object-position:center;
+    }
+
     .dog-image {
         width: 100%;
         height: 400px;
@@ -536,5 +535,4 @@ body {
         overflow: hidden;
         object-position:left;
     }
-
 }
