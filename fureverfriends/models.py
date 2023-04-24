@@ -9,8 +9,9 @@ class Customer(db.Model):
     animals = db.relationship('Animal', backref="customer", lazy=True)
 
     def __repr__(self):
-        return f"Customer('{self.first_name}', '{self.last_name}', '{self.email}')"
-
+        return f"Customer('{self.first_name}'\
+        '{self.last_name}','{self.email}')"
+                            
 
 class Animal(db.Model):
     id = db.Column(db.Integer, primary_key=True)

@@ -13,6 +13,7 @@ def index():
 def about():
     return render_template("about.html")
 
+
 @app.route("/contact")
 def contact():
     return render_template("contact.html")
@@ -27,7 +28,8 @@ def animals():
 def checklist():
     customers = Customer.query.all()
     animals = Animal.query.all()
-    return render_template("checklist.html", customers=customers, animals=animals)
+    return render_template("checklist.html", customers=customers,
+                           animals=animals)
 
 
 @app.route("/success", methods=["GET", "POST"])
@@ -42,7 +44,6 @@ def success():
         animal = Animal(
             animal=request.form.get('animal'),
             animal_name=request.form.get('animal_name'),
-          
         )
 
         db.session.add(customer)
@@ -53,38 +54,29 @@ def success():
     return render_template("success.html")
 
 
-
-
-
 @app.route("/edit/<int:id>",  methods=["GET", "POST"])
 def edit(id):
     customer = Customer.query.get_or_404(id)
- 
+
     if request.method == 'POST':
         customer.first_name = request.form.get('fname'),
         customer.last_name = request.form.get('lname'),
         customer.email = request.form.get('email'),
-     
         db.session.commit()
-        return redirect(url_for("checklist"))  
+        return redirect(url_for("checklist"))
     return render_template("edit.html", customer=customer)
 
 
 @app.route("/edit_animal/<int:animal_id>",  methods=["GET", "POST"])
 def edit_animal(animal_id):
     animal = Animal.query.get_or_404(animal_id)
- 
+
     if request.method == 'POST':
         animal.animal = request.form.get('animal'),
         animal.animal_name = request.form.get('animal_name'),
-        
-     
         db.session.commit()
-        return redirect(url_for("checklist"))  
+        return redirect(url_for("checklist"))
     return render_template("edit_animal.html", animal=animal)
-
-
-
 
 
 @app.route("/delete/<int:id>")
