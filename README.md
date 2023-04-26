@@ -354,6 +354,25 @@ To test the overall performance and accessibility of the application U used The 
 ![Mobile Performance](fureverfriends/static/readme-images/mobile-performance.png)
 
 
+## Relational VS Non Relational Database
+For this project it was decided that the backend would consist of a relational database. The reason fr this being that there is a one to many relationship between the user and the number of animals they would want to visit and potentially foster or rehome.
+
+So if we look at the image below:
+
+![One to many](fureverfriends/static/readme-images/one-to-many.png)
+
+We can see that the two classes represent two individual tables.
+One for the customer and
+One for the animals
+
+If we look at this image:
+![Relationship](fureverfriends/static/readme-images/relationship.png)
+
+
+We can see the line of code that creates the one to many relationship between the two individual classes (tables)
+
+
+
 ## Bugs
 No known bugs at the time of development
 
