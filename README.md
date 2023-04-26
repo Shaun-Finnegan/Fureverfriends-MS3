@@ -12,6 +12,24 @@ The primary aims of the site is to give users information on what we do as a cha
 If the user is particularly interested in a particular animal (or animals) they are also able to use our booking app to book a visit and meet our Furever Friends in person!
 
 
+## Table Of Contents
+* [Project Goals](#project-goals)
+* [User Experience](#user-experience)
+* [User Stories](#user-stories)
+* [Wireframes](#wireframes)
+* [Color Scheme](#color-scheme)
+* [Structure](#structure)
+* [Features](#features)
+* [Technologies Used](#technologies-used)
+* [Testing](#testing)
+* [A note about Semantic HTML](#semantic-html)
+* [Bugs](#bugs)
+* [Wishlist](#wishlist)
+* [Deployment](#deployment)
+* [Credits](#credits)
+
+
+
 ## Project Goals
 ### User Goals
 
@@ -334,6 +352,64 @@ To test the overall performance and accessibility of the application U used The 
 ### Mobile
 
 ![Mobile Performance](fureverfriends/static/readme-images/mobile-performance.png)
+
+
+## Bugs
+No known bugs at the time of development
+
+
+## Wishlist
+
+Upon the completion of this project and reflecting on how I feel the project went overall I feel that there are some additional feature that I could add to further the user experience.
+
+
+
+* Firstly to provide a Login/ Sign up feature for each user
+* Allow search functionality on the site so that the user can search for a specific animal.
+
+
+## Deployment
+
+This applicaction was delpoyed using [Heroku](https://www.heroku.com) and was achieve by following the instruction provided by Code Institute.
+
+So to deploy using Heroku you must;
+
+* Log in to Heroku or create a new account
+* On the main page select 'new' and then select 'create new app'
+* Pick your unique app name and slect your nearest region
+* Click the 'create app' button
+* Once created navigated to the settings page and localte 'config vars'
+* Then find the add button and set the values for "IP", "PORT", "SECRET_KEY" and "DEBUG"
+* Naviagate to the 'Deploy' tab
+* In the Deployment method section, select “Connect to GitHub”
+* Search for your repo and click Connect
+* To add your tables to the database you have To do this, we can click the “More” button and select “Run console”
+* Type python3 into the console and click Run
+* Once in the terminal type
+  from fureverfriends import db followed by
+  db.create_all()
+* Then click the "open app" button
+
+
+
+## Credits
+### Code Institute
+A massive thank you to Code Institute for their instruction on the use of Flask, PostgreSQL and SQL Alchemy, I found the experience to be most useful and what I have learned really helped me with my Milestone Project.
+
+Also For providing the Python code validator to enable me to test and check my code for any errors.
+
+### Am I Responsive?
+Am I Responsive was used to create the Images at the top of this README.md file to showcase the responsiveness of thwe website.
+
+### W3C
+A Massive THank you to W3C Schools for providing both the HTML and CSS validators to allow me to test my code.
+
+### Pixabay
+Another massive thank you to PixaBay for providing such high quality audio resources. The use of which has greatly improved the user experience within my application.
+
+
+
+
 
 
 
