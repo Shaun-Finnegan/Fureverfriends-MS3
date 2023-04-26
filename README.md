@@ -1,108 +1,359 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# Welcome To Furever Firends
 
-Welcome Shaun-Finnegan,
+![Responsive main image](fureverfriends/static/readme-images/responsive-main.png "Responsive home page")
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
 
-You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **September 1, 2021**
+[View Live Site](https://fureverfriendsms3.herokuapp.com/)
 
-## Gitpod Reminders
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
+Welcome to Furever Friends! We are a charity based in the beautiful Dorset countryside, helping to care for and rehome our lovely animals!.
+This charity was born out of neccessity as more and more people are having to give up their pets due to the ongoing cost of living crisis.
+The primary aims of the site is to give users information on what we do as a charity. Our core values and beliefs and allows users to see pictures and information on the animals that we currently in our care.
+If the user is particularly interested in a particular animal (or animals) they are also able to use our booking app to book a visit and meet our Furever Friends in person!
 
-`python3 -m http.server`
 
-A blue button should appear to click: _Make Public_,
+## Project Goals
+### User Goals
 
-Another blue button should appear to click: _Open Browser_.
+* To have a fun and enjoyable experience whilst using the site
+* To be able to navigate around the site easily without complications
+* To be able to visit the site on different devices
+* To be able to get information on the animals in our care
+* To be able to book a visit to meet a particular animal (or animals)
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
 
-A blue button should appear to click: _Make Public_,
+### Site Owner Goals
 
-Another blue button should appear to click: _Open Browser_.
+* To rehome the animals in our care
+* To provide the user with a fun and enjoyable experience
+* To allow the user to access the site on any device they choose
+* To give users a positive experience so that they return to the site
+* To keep the site simple as the main goal of the site is to rehome the animals in our care, so the focus must be on showcasing our animals and encourage the user to book a visit to meet the animals.
 
-In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
 
-To log into the Heroku toolbelt CLI:
 
-1. Log in to your Heroku account and go to *Account Settings* in the menu under your avatar.
-2. Scroll down to the *API Key* and click *Reveal*
-3. Copy the key
-4. In Gitpod, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
+## User Experience
+### Target Audience
 
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
+* People who love animals
+* People wanting to rehome our animals
+* People wanting to support and get involved with our charity
 
-------
 
-## Release History
+### Requirements and Expectations
 
-We continually tweak and adjust this template to help give you the best experience. Here is the version history:
+* A fully functional and responsive website
+* Clear and easy navigation between pages and sections of the website
+* An asthetically please website
+* To provide an enjoyable and informative experience which will encourage users to book a visit to meet one of our animals.
+* Should be able to make a booking
+* Should be able to view their booking
+* Should be able to make changes to their booking
+* Should be able to delete their booking
+* Should have an interactive and enjoyable experience
 
-**September 1 2021:** Remove `PGHOSTADDR` environment variable.
 
-**July 19 2021:** Remove `font_fix` script now that the terminal font issue is fixed.
+## User Stories
+### First Time User
 
-**July 2 2021:** Remove extensions that are not available in Open VSX.
+* Should immediatley be able to understand how to use and navigate around the website
+* Should arrive on the website and understand what we do as a charity
+* Should be able to find information on the animals in our care
+* Should be able to easily find the booking page and be able to book a visit to see one of our animals.
+* Should be able to make a booking
+* Should be able to view their booking
+* Should be able to make changes to their booking
+* Should be able to delete their booking
+* Should have an interactive and enjoyable experience
 
-**June 30 2021:** Combined the P4 and P5 templates into one file, added the uptime script. See the FAQ at the end of this file.
 
-**June 10 2021:** Added: `font_fix` script and alias to fix the Terminal font issue
+### Returning Users
 
-**May 10 2021:** Added `heroku_config` script to allow Heroku API key to be stored as an environment variable.
+* Should be able to find updated information on the animals in our care
+* Should have an interactive and enjoyable experience
 
-**April 7 2021:** Upgraded the template for VS Code instead of Theia.
 
-**October 21 2020:** Versions of the HTMLHint, Prettier, Bootstrap4 CDN and Auto Close extensions updated. The Python extension needs to stay the same version for now.
+### Site Owner
+* Wants the user to know how to navigate through the website easily to find the information that they want
+* Wants the user to feel at ease with using the site and ensure that there isn't a steep learning curve
+* Wants the site to be accessible to anyone who wishes to use it
+* Wants the user to be able to book a visit to meet one of our animals
 
-**October 08 2020:** Additional large Gitpod files (`core.mongo*` and `core.python*`) are now hidden in the Explorer, and have been added to the `.gitignore` by default.
 
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed, along with other common files.
+## Wireframes
+The wireframes below Where created at the beginnig of this project with a mobile first approach in mind. The aim was to keep the design as simple as possible so as not to take away from the experience that the game itself would provide. These wire frames where created with a software called [Just In Mind](https://www.justinmind.com/)
 
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
+### Home Page
+* [Mobile](https://github.com/Shaun-Finnegan/Fureverfriends-MS3/blob/main/fureverfriends/static/readme-images/home-mobile.png?raw=true)
+* [Tablet](https://github.com/Shaun-Finnegan/Fureverfriends-MS3/blob/main/fureverfriends/static/readme-images/home-tablet.png?raw=true)
+* [Desktop](https://github.com/Shaun-Finnegan/Fureverfriends-MS3/blob/main/fureverfriends/static/readme-images/main-desktop.png?raw=true)
+### About Page
+* [Mobile](https://github.com/Shaun-Finnegan/Fureverfriends-MS3/blob/main/fureverfriends/static/readme-images/about-mobile.png?raw=true)
+* [Tablet](https://github.com/Shaun-Finnegan/Fureverfriends-MS3/blob/main/fureverfriends/static/readme-images/about-tablet.png?raw=true)
+* [Desktop](https://github.com/Shaun-Finnegan/Fureverfriends-MS3/blob/main/fureverfriends/static/readme-images/about-desktop.png?raw=true)
+### Rehoming Page
+* [Mobile](https://github.com/Shaun-Finnegan/Fureverfriends-MS3/blob/main/fureverfriends/static/readme-images/rehoming-mobile.png?raw=true)
+* [Tablet](https://github.com/Shaun-Finnegan/Fureverfriends-MS3/blob/main/fureverfriends/static/readme-images/rehoming-tablet.png?raw=true)
+* [Desktop](https://github.com/Shaun-Finnegan/Fureverfriends-MS3/blob/main/fureverfriends/static/readme-images/rehoming-desktop.png?raw=true)
+### Meet Our Animals Page
+* [Mobile](https://github.com/Shaun-Finnegan/Fureverfriends-MS3/blob/main/fureverfriends/static/readme-images/booking-mobile.png?raw=true)
+* [Tablet](https://github.com/Shaun-Finnegan/Fureverfriends-MS3/blob/main/fureverfriends/static/readme-images/booking-tablet.png?raw=true)
+* [Desktop](https://github.com/Shaun-Finnegan/Fureverfriends-MS3/blob/main/fureverfriends/static/readme-images/booking-desktop.png?raw=true)
 
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
 
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
+## Color Scheme
+For this project bright and vibrant colors where used. The reason for this was to help put the user in a positive state of mind whilst using the site, which would allow them to develop a positive association to the site and the charity name.
 
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
 
-------
+## Structure
+The structure of the website was kept as simple as possible. This would allow the user to easily navigate through the site and find the information that they are looking for.
+The main focus of this site is to allow users to view and find information on the animals we are looking to rehome and then book a viewing to meet the animal that they are interested in.
+So it was felt that the site should be kept as simple as possible to not distract from the main focus of the site.
 
-## FAQ about the uptime script
 
-**Why have you added this script?**
+## Features
 
-It will help us to calculate how many running workspaces there are at any one time, which greatly helps us with cost and capacity planning. It will help us decide on the future direction of our cloud-based IDE strategy.
+### Navigation Bar and Logo
+This allows the user to quickly and easily navigate through the site to find the information that they are looking for. The Logo also acts as a link and will return the user to the home page.
 
-**How will this affect me?**
+![Navigation Bar and Logo](fureverfriends/static/readme-images/navbar.png)
 
-For everyday usage of Gitpod, it doesn’t have any effect at all. The script only captures the following data:
+### Banner image
+This is found under the navigation bar on each page of the website. Each banner image contains a picture of a different animal. This is done to encourage an emotive response from the user.
 
-- An ID that is randomly generated each time the workspace is started.
-- The current date and time
-- The workspace status of “started” or “running”, which is sent every 5 minutes.
+![Banner Image](fureverfriends/static/readme-images/banner-images.png)
 
-It is not possible for us or anyone else to trace the random ID back to an individual, and no personal data is being captured. It will not slow down the workspace or affect your work.
 
-**So….?**
+### Welcome To Furever Friends
+This section welcomes the user to the site and gives them an insight into what the sight is about.
 
-We want to tell you this so that we are being completely transparent about the data we collect and what we do with it.
+![Welcome ToFurever Friends](fureverfriends/static/readme-images/welcome-to-fureverfriends.png)
 
-**Can I opt out?**
 
-Yes, you can. Since no personally identifiable information is being captured, we'd appreciate it if you let the script run; however if you are unhappy with the idea, simply run the following commands from the terminal window after creating the workspace, and this will remove the uptime script:
+### Our Mission
+This section tells the user what we are about as a charity and what we are trying to achieve.
 
-```
-pkill uptime.sh
-rm .vscode/uptime.sh
-```
+![Our Mission](fureverfriends/static/readme-images/our-mission.png)
 
-**Anything more?**
 
-Yes! We'd strongly encourage you to look at the source code of the `uptime.sh` file so that you know what it's doing. As future software developers, it will be great practice to see how these shell scripts work.
+### About Us
+This section gives the user information on our formation, location and our history.
 
----
+![About Us](fureverfriends/static/readme-images/about-us.png)
 
-Happy coding!
+
+### Why We Do It
+This section is used to show our passion for the work we do and hopefully this will inspre users to be as passionate about animals as we are!
+
+![Why We Do It](fureverfriends/static/readme-images/why-we-do-it.png)
+
+
+### Rehoming
+This section aims to inform the user what is meant by rehoming. It outlines the process we take to rehome one of our animals and what we expect of the people rehoming our Furever Friends!
+
+![Rehoming](fureverfriends/static/readme-images/rehoming.png)
+
+
+### Fostering
+This section gives the user information on fostering, how the user can help and the process we go through to ensure the decision to foster one of our Furever Friends is the right decision for both the animal and the the person fostering them.
+
+![Fostering](fureverfriends/static/readme-images/fostering.png)
+
+
+### Meet Our Animals
+This section gives the user the opportunity to find out more about the animals in our care.
+
+![Meet Our Animals](fureverfriends/static/readme-images/meet-our-animals.png)
+
+![Meet Our Animals](fureverfriends/static/readme-images/meet-our-animals-2.png)
+
+
+### Book A Visit
+If a user likes a particular animal they have read about on the website they are able to book a visit so they can spend time with the animal and get to know them better. The user will have to enter certain information about themselves
+* First Name
+* Last Name
+* Email
+and certain information about the animal.
+* Animal type
+* Animal Name
+
+Once the form has been submitted one of our team will be in touch to arrange a suitable date and time for the visit.
+
+![Book A Visit](fureverfriends/static/readme-images/book-a-meeting.png)
+
+
+### Viewing A Booking
+Once the user has made a booking to meet the Furever Friend of their choosing they will be able to view their booking.
+
+![Viewing A Booking](fureverfriends/static/readme-images/review-booking.png)
+
+
+### Editing A Booking
+Once the user has made a booking they will have the option to change the details of their booking such as choosing to visit a different animal.
+The User can also delete or cancel their booking by using the Delete button under their booking.
+
+![Change A Booking](fureverfriends/static/readme-images/edit-booking-person.png)
+
+![Change A Booking](fureverfriends/static/readme-images/edit-booking-animal.png)
+
+
+### Footer and Social Links
+At the bottom of each page the user will be able to interact with the footer menu that contains links to our social media pages.
+
+![Footer and Social Links](fureverfriends/static/readme-images/footer-social-links.png)
+
+
+## Technologies Used
+* HTML
+* CSS
+* Python
+* Flask
+* Github
+* Heroku
+* SQLAlchemy
+* PostgreSQL
+* Jinja
+* ElephantSQL
+
+
+### Additional Tools Used For This Project
+
+* Justinmind prototyping tool
+* Chrome Developer Tools
+
+
+## Testing
+
+### Cross Platform Testing
+
+Once the site was completed and deployed it was tested on four web browsers to check that the application behaved and performed the same way on each one. The browsers used where:
+
+* Google Chrome
+* Mozilla FireFox
+* Microsoft Edge
+* Safari
+
+Overall I was pleased to see that the sites performancer and behaviour was consistent througfhout all four browsers.
+
+
+### Compatability Testing
+
+Once deployed the site was tested on numerous devices to ensure that performance and behaviour were consistent. The devices used are as follows:
+
+* Asus VivoBook
+* Ipad Air 3
+* Samsung Galaxy s8
+* OPPO A72
+* Various templates within Chrome Dev Tools
+
+Performance and behaviour of the application whilst being tested on these devices was consistent and the application behaved as intended on each device.
+
+
+### Responsive Testing
+
+As well as the application been tested on all the devices mentioned above, the application was also tested using the responsive screen view in chrome dev tools. This additional testing really helped to pick out any responsiveness issues that had previously been overlooked. However the application was very responsive and behaved the way the developer intended on all screen sizes.
+
+
+
+## Validator Testing
+
+### HTML
+The tool I chose to use to validate my HTML was [W3C Markup Validator](https://validator.w3.org/) and I am delighted to say that there were no errors or major issues with my Markup. As you can see from below.
+
+#### Home Page
+
+![Home Page](fureverfriends/static/readme-images/home-html-validator.png)
+
+
+#### About Page
+
+![About Page](fureverfriends/static/readme-images/about-html-validator.png)
+
+
+#### Rehoming Page
+
+![Rehoming Page](fureverfriends/static/readme-images/rehoming-html-validator.png)
+
+
+#### Meet Our Animals Page
+
+![Meet Our Animals](fureverfriends/static/readme-images/meet-html-validator.png)
+
+
+
+### Semantic HTML
+As you can see from the above images there are a few warnings been shown by the validator.
+
+I could resolve these warnings by replacing the semantic HTML with DIV tags. However I have decided that due to the website having a specific structure  It was important to leave the sementic elements within my markup.
+
+This has had no effect on the perfomance or accessibility of the website.
+
+
+### CSS
+
+The validation service used for testing my CSS was the [W3C CSS Validation Service](https://jigsaw.w3.org/css-validator/) and I was delighted to see that there where no major issues or errors with my CSS file.
+
+
+![CSS Validator](fureverfriends/static/readme-images/css-validator.png)
+
+
+### Python
+The service is used to validate the Python code for this project was The Code Institute's [Python Validation Service](https://pep8ci.herokuapp.com/).
+I was delighted to see that apart from a few indentation errors there were no major issues with my code.
+
+
+#### Run
+
+![run.py File](fureverfriends/static/readme-images/runpy-validator.png)
+
+
+#### Models
+
+![models.py](fureverfriends/static/readme-images/models-validator.png)
+
+#### Routes
+
+![routes.py](fureverfriends/static/readme-images/routes-validator.png)
+
+
+#### Init
+
+![init.py](fureverfriends/static/readme-images/init-validator.png)
+
+
+
+## Performance and Accessibility Testing
+
+To test the overall performance and accessibility of the application U used The Google Chrome Lighthouse Extension I tested both performance and accesibility on desktop and mobile devices and I was very pleased with the results.
+
+### Desktop
+
+![Desktop Performance](fureverfriends/static/readme-images/desktop-performance.png)
+
+
+### Mobile
+
+![Mobile Performance](fureverfriends/static/readme-images/mobile-performance.png)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
