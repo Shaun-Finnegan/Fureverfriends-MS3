@@ -3,25 +3,28 @@ from fureverfriends import app, db
 from fureverfriends.models import Customer, Animal
 from sqlalchemy import text
 
+# Renders Home Page
+
 
 @app.route('/')
 def index():
     return render_template("index.html")
+
+# Renders About Page
 
 
 @app.route("/about")
 def about():
     return render_template("about.html")
 
-
-@app.route("/contact")
-def contact():
-    return render_template("contact.html")
+# Renders Animals Page
 
 
 @app.route("/animals")
 def animals():
     return render_template("animals.html")
+
+# Renders booking Page
 
 
 @app.route("/checklist", methods=["GET", "POST"])
@@ -30,6 +33,8 @@ def checklist():
     animals = Animal.query.all()
     return render_template("checklist.html", customers=customers,
                            animals=animals)
+
+# This shows that the information in the form has been sent to the database
 
 
 @app.route("/success", methods=["GET", "POST"])
@@ -53,6 +58,8 @@ def success():
         return redirect(url_for("checklist"))
     return render_template("success.html")
 
+# This allows the user to edit the information they have submitted
+
 
 @app.route("/edit/<int:id>",  methods=["GET", "POST"])
 def edit(id):
@@ -65,6 +72,8 @@ def edit(id):
         db.session.commit()
         return redirect(url_for("checklist"))
     return render_template("edit.html", customer=customer)
+
+# This allows the user to edit the animal information they have submitted
 
 
 @app.route("/edit_animal/<int:animal_id>",  methods=["GET", "POST"])
