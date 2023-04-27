@@ -1,9 +1,9 @@
+/*General styles to all pages*/
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-
-
 }
 
 html {
@@ -12,8 +12,10 @@ html {
 
 body {
     overflow-x: hidden;
-    font-size:20px;
+    font-size: 20px;
 }
+
+/*Grid and Layout of each page*/
 
 .container {
     display: grid;
@@ -25,9 +27,10 @@ body {
         "main-image main-image main-image main-image"
         "main1 main1 main2 main2"
         "footer footer footer footer";
-
-
 }
+
+
+/*Grid and Layout for booking form*/
 
 .container-checklist {
     display: grid;
@@ -42,6 +45,8 @@ body {
 
 }
 
+/*Styles for Navbar and Logo*/
+
 .logo {
     grid-area: logo;
     background-color: blue;
@@ -54,22 +59,13 @@ body {
     margin: 5%;
 }
 
-.logo-link{
+.logo-link {
     text-decoration: none;
     color: #fff;
 }
 
-.logo-link:hover{
-    text-decoration:underline;
-}
-
-
-
-.form {
-    text-align: center;
-    margin-top: 10px;
-    margin-bottom: 10%;
-
+.logo-link:hover {
+    text-decoration: underline;
 }
 
 
@@ -106,6 +102,8 @@ body {
     color: red;
 }
 
+/*Styles for main content areas*/
+
 .welcome {
     display: block;
     grid-area: welcome;
@@ -116,11 +114,8 @@ body {
 }
 
 .Hi {
-
     display: flex;
     justify-content: center;
-
-
 }
 
 .welcome-info {
@@ -129,11 +124,9 @@ body {
 }
 
 .main1 {
-    background-color:#00FF7F;
+    background-color: #00FF7F;
     grid-area: main1;
 }
-
-
 
 .main2 {
     background-color: pink;
@@ -145,189 +138,49 @@ body {
     justify-content: center;
 }
 
-.about {
-
-    display: flex;
-    justify-content: center;
-
-}
-
-.about-info{
-    text-align: center;
-    padding: 10px;
-}
-
-.why{
-    text-align: center;
-    padding: 10px;
-}
-
-
-
-.rehoming {
-
-    display: flex;
-    justify-content: center;
-    margin-top: 1%;
-
-}
-
-.fostering{
-    display: flex;
-    justify-content: center;
-    margin-top: 1%;
-}
-
-.rehoming-info{
-    text-align: center;
-    padding: 10px;
-}
-
-.fostering-info{
-    text-align: center;
-    padding: 10px; 
-}
-
-.fluffy{
-    display: flex;
-    justify-content: center;
-    margin-top: 3%;
-}
-
-.bucky{
-    display: flex;
-    justify-content: center;
-    margin-top: 3%;
-
-}
-
-.bucky-image{
-    display:block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 3%;
-}
-
-.bucky-breed{
-    text-align: center;
-    padding: 10px; 
-}
-
-.bucky-age{
-    text-align: center;
-    padding: 10px; 
-}
-
-.bucky-info{
-    text-align: center;
-    padding: 10px;
-}
-
-.fluffy{
-    display: flex;
-    justify-content: center;
-    margin-top: 3%;
-}
-
-.fluffy-image{
-    display:block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 3%;
-}
-
-.fluffy-breed{
-    text-align: center;
-    padding: 10px; 
-}
-
-.fluffy-age{
-    text-align: center;
-    padding: 10px; 
-}
-
-.fluffy-info{
-    text-align: center;
-    padding: 10px; 
-}
-
-.doodles{
-    display: flex;
-    justify-content: center;
-    margin-top: 3%;
-}
-
-
-.doodles-image{
-    display:block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 3%;
-}
-
-.doodles-age{
-    text-align: center;
-    padding: 10px; 
-}
-
-.doodles-breed{
-    text-align: center;
-    padding: 10px; 
-}
-
-.doodles-info{
-    text-align: center;
-    padding: 10px; 
-    margin-bottom: 5%;
-}
-
-
-.mic{
-    display: flex;
-    justify-content: center;
-    margin-top: 3%;
-}
-
-.mic-image{
-    display:block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 3%;
-}
-
-.edit-booking {
-    margin-top: 5%;
-    display: flex;
-    justify-content: center;
-}
-
-.mic-age{
-    text-align: center;
-    padding: 10px; 
-}
-
-
-.mic-breed{
-    text-align: center;
-    padding: 10px; 
-}
-
-.mic-info{
-    text-align: center;
-    padding: 10px; 
-    margin-bottom: 5%;
-}
-
-
-.book-meeting {
-    display: flex;
-    justify-content: center;
-}
-
 .mission-info {
     text-align: center;
     padding: 10px;
 }
+
+.about {
+    display: flex;
+    justify-content: center;
+}
+
+.about-info {
+    text-align: center;
+    padding: 10px;
+}
+
+.why {
+    text-align: center;
+    padding: 10px;
+}
+
+.rehoming {
+    display: flex;
+    justify-content: center;
+    margin-top: 1%;
+}
+
+.fostering {
+    display: flex;
+    justify-content: center;
+    margin-top: 1%;
+}
+
+.rehoming-info {
+    text-align: center;
+    padding: 10px;
+}
+
+.fostering-info {
+    text-align: center;
+    padding: 10px;
+}
+
+/*Styling for images used on the site and animals looking for new homes*/
 
 .main-image {
     grid-area: main-image;
@@ -360,7 +213,143 @@ body {
     height: 400px;
     object-fit: cover;
     overflow: hidden;
-    
+
+}
+
+.fluffy {
+    display: flex;
+    justify-content: center;
+    margin-top: 3%;
+}
+
+.bucky {
+    display: flex;
+    justify-content: center;
+    margin-top: 3%;
+
+}
+
+.bucky-image {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 3%;
+}
+
+.bucky-breed {
+    text-align: center;
+    padding: 10px;
+}
+
+.bucky-age {
+    text-align: center;
+    padding: 10px;
+}
+
+.bucky-info {
+    text-align: center;
+    padding: 10px;
+}
+
+.fluffy {
+    display: flex;
+    justify-content: center;
+    margin-top: 3%;
+}
+
+.fluffy-image {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 3%;
+}
+
+.fluffy-breed {
+    text-align: center;
+    padding: 10px;
+}
+
+.fluffy-age {
+    text-align: center;
+    padding: 10px;
+}
+
+.fluffy-info {
+    text-align: center;
+    padding: 10px;
+}
+
+.doodles {
+    display: flex;
+    justify-content: center;
+    margin-top: 3%;
+}
+
+
+.doodles-image {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 3%;
+}
+
+.doodles-age {
+    text-align: center;
+    padding: 10px;
+}
+
+.doodles-breed {
+    text-align: center;
+    padding: 10px;
+}
+
+.doodles-info {
+    text-align: center;
+    padding: 10px;
+    margin-bottom: 5%;
+}
+
+
+.mic {
+    display: flex;
+    justify-content: center;
+    margin-top: 3%;
+}
+
+.mic-image {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 3%;
+}
+
+.edit-booking {
+    margin-top: 5%;
+    display: flex;
+    justify-content: center;
+}
+
+.mic-age {
+    text-align: center;
+    padding: 10px;
+}
+
+
+.mic-breed {
+    text-align: center;
+    padding: 10px;
+}
+
+.mic-info {
+    text-align: center;
+    padding: 10px;
+    margin-bottom: 5%;
+}
+
+/*Styling for Meet our animals page*/
+.book-meeting {
+    display: flex;
+    justify-content: center;
 }
 
 .checklist-title-container {
@@ -369,6 +358,12 @@ body {
 
 .check-image-container {
     grid-area: check-image;
+}
+
+.form {
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10%;
 }
 
 .viewing-form {
@@ -382,7 +377,6 @@ body {
 }
 
 
-
 .book-a-viewing {
     margin-top: 10%;
     height: 50px;
@@ -392,8 +386,8 @@ body {
     border: 1px solid #000;
 }
 
-.book-a-viewing:hover{
-    background-color:#D2691E;
+.book-a-viewing:hover {
+    background-color: #D2691E;
 }
 
 .your-booking {
@@ -414,43 +408,44 @@ body {
     margin-top: 5%;
 }
 
-.edit-animal-title{
+.edit-animal-title {
     display: flex;
     justify-content: center;
     margin-top: 5%;
 }
 
-.edit-button{
+.edit-button {
     color: #fff;
     margin-left: 25%;
     margin-bottom: 5%;
     background-color: green;
     height: 40px;
-    width:60px;
-    padding:10px;
+    width: 60px;
+    padding: 10px;
     border: 1px solid #000;
 }
 
-.delete-button{
+.delete-button {
     color: #fff;
     margin-left: 5%;
     margin-bottom: 5%;
-    background-color:brown;
+    background-color: brown;
     height: 40px;
-    width:60px;
-    padding:10px;
+    width: 60px;
+    padding: 10px;
     font-size: 12px;
     border: 1px solid #000;
 }
 
-.edit-button:hover{
-    background-color:#6B8E23;
+.edit-button:hover {
+    background-color: #6B8E23;
 }
 
-.delete-button:hover{
-    background-color:#D2691E;
+.delete-button:hover {
+    background-color: #D2691E;
 }
 
+/*Styling for footer and social links*/
 
 .footer {
     background-color: brown;
@@ -478,6 +473,7 @@ body {
     color: #fff;
 }
 
+/*Media Queries*/
 
 @media only screen and (max-width: 1000px) {
     .container {
@@ -536,7 +532,7 @@ body {
         object-fit: cover;
         overflow: hidden;
         height: 400px;
-        object-position:center;
+        object-position: center;
     }
 
     .dog-image {
@@ -544,7 +540,7 @@ body {
         height: 400px;
         object-fit: cover;
         overflow: hidden;
-        object-position:left;
+        object-position: left;
     }
 
     .squirell-image {
@@ -552,9 +548,7 @@ body {
         height: 400px;
         object-fit: cover;
         overflow: hidden;
-        
-        
+
+
     }
 }
-
-
