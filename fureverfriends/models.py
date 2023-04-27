@@ -1,5 +1,7 @@
 from fureverfriends import db
 
+# Customer Model
+
 
 class Customer(db.Model):
     id = db.Column(db.Integer, primary_key=True)
@@ -11,7 +13,9 @@ class Customer(db.Model):
     def __repr__(self):
         return f"Customer('{self.first_name}'\
         '{self.last_name}','{self.email}')"
-                            
+                           
+# Animal Model
+
 
 class Animal(db.Model):
     id = db.Column(db.Integer, primary_key=True)
