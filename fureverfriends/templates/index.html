@@ -1,12 +1,13 @@
 {% extends "base.html" %}
+<!--This will be injected into the base template-->
 {% block content %}
   <h1 class = "Hi">Welcome To FurEver Friends</h1>
 {% endblock %}
-
+<!--This will be injected into the base template-->
 {% block main2 %}
   <h1>Our Mission</h1>
 {% endblock %}
-
+<!--This will be injected into the base template-->
 {% block image %}
   <img src= "{{url_for ('static', filename= 'images/main-rabbit.jpg')}}" class="rabbit-image" alt="image of a rabbit">
 {% endblock %}

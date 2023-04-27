@@ -2,23 +2,24 @@
 {% block content %}
 <h1 class="about">About Us</h1>
 {% endblock %}
-
+<!--This will be injected into the base template-->
 {% block welcomeinfo %}
 <p class="about-info">We rehome within East Dorset and West Hampshire. This enables us to conduct prehoming checks and
-  follow up visits. Waggy Tails also runs an advice service which deals with pet problems and can direct enquiries to
+  follow up visits. We also runs an advice service which deals with pet problems and can direct enquiries to
   the best available help if we cannot help ourselves.</p>
 {% endblock %}
-
+<!--This will be injected into the base template-->
 {% block main2 %}
 <h1>Why We Do It</h1>
 {% endblock %}
-
+<!--This will be injected into the base template-->
 {% block missioninfo %}
 <p class="why">
   It's Simple!<br>
   We do what we do out of love. Every animal deserves a loving home and a great quality of life!
 </p>
 {% endblock%}
+<!--This will be injected into the base template-->
 {% block image %}
 <img src="{{url_for ('static', filename= 'images/guinae-pig-banner.jpg')}}" class="guinea-image" alt="image of a guinea pig">
 {% endblock %}

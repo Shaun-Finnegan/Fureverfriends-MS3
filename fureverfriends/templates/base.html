@@ -11,7 +11,7 @@
 </head>
 
 <body>
-
+    <!--Navigation bar and logo-->
     <div class="container">
         <div class="logo">
             <h1 class="logo-text"><a href="{{url_for('index')}}" class="logo-link">FurEver Friends</a></h1>
@@ -26,7 +26,7 @@
         </nav>
 
 
-
+        <!--Main Banner Image-->
 
         <section class="main-image">
             <div class="image-container">
@@ -34,6 +34,7 @@
                 {% endblock %}
             </div>
         </section>
+        <!--Welcome information-->
         <section class="main1">
             <div class="welcome">
                 {% block content %}
@@ -51,6 +52,7 @@
                 re-homing we also look after animals in long term foster homes.</p>
             {% endblock %}
         </section>
+        <!--Mission Statement-->
         <section class="main2">
             <div class="mission-heading">
                 {% block main2 %}
@@ -66,6 +68,7 @@
             {% block bookinginfo %}
             {% endblock %}
         </section>
+        <!--Footer and Social Links-->
         <footer class="footer">
             <ul>
                 <li>
