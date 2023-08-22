@@ -371,7 +371,7 @@ If we look at this image:
 
 We can see the line of code that creates the one to many relationship between the two individual classes (tables)
 
- The relationship is designed to allow one visitor to be able to book a viewing to visit many different different. This was achieved by making the primary key of the animals model a foreign key to the customer model as outlined in the diagram below.
+ The relationship is designed to allow one visitor to be able to book a viewing to visit many different animals looking for a forever home. This was achieved by making the primary key of the animals model a foreign key to the customer model as outlined in the diagram below.
 
  ![Relationship](fureverfriends/static/readme-images/one-to-many-relationship.png)
 
